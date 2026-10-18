@@ -1,0 +1,11 @@
+.campaign-section-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.campaign-section-search {
+  color: #087642;
+  font-weight: 750;
+  text-decoration: none;
+}

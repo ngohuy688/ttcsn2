@@ -1,0 +1,135 @@
+.auth-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
+  min-height: min(690px, calc(100vh - 150px));
+  overflow: hidden;
+  border: 1px solid #e3e9e4;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 22px 55px rgba(24, 55, 36, 0.08);
+}
+
+.auth-story {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(32px, 6vw, 76px);
+  background:
+    radial-gradient(circle at 82% 14%, rgba(255, 255, 255, 0.65), transparent 27%),
+    linear-gradient(145deg, #e6f4e8 0%, #f3f8ed 48%, #dcefe0 100%);
+}
+
+.auth-eyebrow {
+  color: #007a41;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.auth-story h1 {
+  max-width: 590px;
+  margin: 18px 0;
+  color: #173c28;
+  font-size: clamp(2rem, 4.3vw, 3.6rem);
+  line-height: 1.08;
+}
+
+.auth-story > p {
+  max-width: 510px;
+  margin: 0;
+  color: #486253;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.auth-story-note {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 440px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(23, 60, 40, 0.16);
+  padding-top: 20px;
+  color: #31543e;
+}
+
+.auth-story-note > span {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff;
+  color: #008f4c;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.auth-story-note p {
+  margin: 0;
+  font-weight: 650;
+}
+
+.auth-panel {
+  align-self: center;
+  width: min(100%, 500px);
+  margin: 0 auto;
+  padding: 44px clamp(28px, 5vw, 62px);
+}
+
+.auth-home-link {
+  display: inline-block;
+  margin-bottom: 36px;
+  color: #007a41;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.auth-panel h2 {
+  margin: 0;
+  color: #1b2d22;
+  font-size: 2rem;
+}
+
+.auth-panel-description {
+  margin: 8px 0 28px;
+  color: #68756d;
+  line-height: 1.6;
+}
+
+.auth-privacy-note {
+  margin: 22px 0 0;
+  color: #7a857e;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .auth-page {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .auth-story {
+    padding: 34px 28px;
+  }
+
+  .auth-story h1 {
+    font-size: 2rem;
+  }
+
+  .auth-story-note {
+    margin-top: 24px;
+  }
+
+  .auth-panel {
+    padding: 34px 28px 40px;
+  }
+
+  .auth-home-link {
+    margin-bottom: 22px;
+  }
+}

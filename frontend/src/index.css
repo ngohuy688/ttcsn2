@@ -1,0 +1,21 @@
+html, body, #root {
+  margin: 0;
+  min-height: 100%;
+  min-width: 320px;
+  width: 100%;
+}
+
+body {
+  font-family: Inter, 'Segoe UI', sans-serif;
+  background: #f4f7fb;
+  color: #0f172a;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+}
